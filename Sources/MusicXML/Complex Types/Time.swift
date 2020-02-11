@@ -116,8 +116,8 @@ extension Time {
     public struct Signature {
         // MARK: - Instance Properties
 
-        let beats: Int
-        let beatType: Int
+        public let beats: Int
+        public let beatType: Int
 
         public init(beats: Int, beatType: Int) {
             self.beats = beats
@@ -145,8 +145,8 @@ extension Time {
         // MARK: - Instance Properties
 
         // FIXME: Handle multiple time signatures in Time.Measured
-        var signature: Signature
-        var interchangeable: Interchangeable?
+        public var signature: Signature
+        public var interchangeable: Interchangeable?
 
         public init(signature: Signature, interchangeable: Interchangeable? = nil) {
             self.signature = signature
